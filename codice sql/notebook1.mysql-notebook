@@ -1,0 +1,138 @@
+{
+    "type": "MySQLNotebook",
+    "version": "1.0",
+    "caption": "Script",
+    "content": "USE gas_2026;\n\nshow tables;\n\ndescribe prova;\n# CRUD\n\nSHOW CREATE TABLE prova;\n\nCREATE TABLE `prova` (\n  `nome` varchar(30) DEFAULT NULL,\n  `prezzo` decimal(6,2) DEFAULT NULL\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;\n\n# CREATE, \n# Creare nuovi record\nINSERT INTO prova (nome, prezzo) VALUES ('Maglia rossa', 12);\n\n# READ, \nSELECT nome, prezzo FROM prova;\n\n# UPDATE, \nUPDATE prova SET prezzo = 15.50 WHERE prezzo = 12.00;\n\n# DELETE\nDELETE FROM prova WHERE prezzo = 12.00;\n\n# modificare tabella\nALTER TABLE prova\nADD COLUMN descrizione VARCHAR(100);\n\nDROP TABLE prova;",
+    "options": {
+        "tabSize": 4,
+        "indentSize": 4,
+        "insertSpaces": true,
+        "defaultEOL": "LF",
+        "trimAutoWhitespace": true
+    },
+    "viewState": null,
+    "contexts": [
+        {
+            "state": {
+                "start": 1,
+                "end": 32,
+                "language": "mysql",
+                "result": {
+                    "type": "text",
+                    "text": [
+                        {
+                            "type": 2,
+                            "index": 0,
+                            "resultId": "1844d160-2da0-43bb-df87-d8621db7e552",
+                            "content": "OK, 0 records retrieved in 1.942ms"
+                        }
+                    ]
+                },
+                "currentHeight": 200,
+                "currentSet": 1,
+                "statements": [
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 0,
+                            "length": 13
+                        },
+                        "contentStart": 0,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 13,
+                            "length": 14
+                        },
+                        "contentStart": 15,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 27,
+                            "length": 17
+                        },
+                        "contentStart": 30,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 44,
+                            "length": 33
+                        },
+                        "contentStart": 53,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 77,
+                            "length": 164
+                        },
+                        "contentStart": 79,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 241,
+                            "length": 96
+                        },
+                        "contentStart": 276,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 337,
+                            "length": 42
+                        },
+                        "contentStart": 348,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 379,
+                            "length": 66
+                        },
+                        "contentStart": 392,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 445,
+                            "length": 50
+                        },
+                        "contentStart": 457,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 495,
+                            "length": 77
+                        },
+                        "contentStart": 518,
+                        "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 572,
+                            "length": 19
+                        },
+                        "contentStart": 575,
+                        "state": 0
+                    }
+                ]
+            },
+            "data": []
+        }
+    ]
+}
